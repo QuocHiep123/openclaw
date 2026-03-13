@@ -1,0 +1,35 @@
+# Core AI frameworks
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-google-genai>=2.0.0
+langchain-community>=0.3.0
+langgraph>=0.2.0
+
+# Vector database
+chromadb>=0.5.0
+
+# MCP / API server
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Telegram bot
+python-telegram-bot>=21.0
+
+# Research tools
+feedparser>=6.0.0
+arxiv>=2.1.0
+
+# Web search
+duckduckgo-search>=6.0.0
+
+# Utilities
+httpx>=0.27.0
+python-dotenv>=1.0.0
+apscheduler>=3.10.0
+aiofiles>=24.0.0
+rich>=13.0.0
+
+# Code execution safety
+RestrictedPython>=7.0
