@@ -15,7 +15,10 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . .
 
-# Health check — verify Python is working
+# Create data directory with proper permissions
+RUN mkdir -p /app/data/chroma && chmod -R 777 /app/data
+
+# Health check
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 --start-period=15s \
     CMD python -c "import sys; sys.exit(0)" || exit 1
 
