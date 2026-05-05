@@ -20,6 +20,9 @@ python-telegram-bot>=21.0
 # Research tools
 feedparser>=6.0.0
 arxiv>=2.1.0
+requests>=2.31.0
+pyyaml>=6.0
+pylatexenc>=2.10
 
 # Web search
 duckduckgo-search>=6.0.0
@@ -30,6 +33,7 @@ python-dotenv>=1.0.0
 apscheduler>=3.10.0
 aiofiles>=24.0.0
 rich>=13.0.0
+reportlab>=4.2.0
 
 # Code execution safety
 RestrictedPython>=7.0

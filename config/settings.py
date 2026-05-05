@@ -24,6 +24,10 @@ class Settings(BaseSettings):
     llm_model: str = Field(default="gpt-4o-mini")
     openai_api_key: str = Field(default="")
     google_api_key: str = Field(default="")
+    google_api_keys: str = Field(
+        default="",
+        description="Comma-separated Google API keys for rotation",
+    )
 
     # -- Telegram --
     telegram_bot_token: str = Field(default="")
@@ -54,6 +58,17 @@ class Settings(BaseSettings):
     daily_report_minute: int = Field(default=0, description="Minute to run daily report")
     daily_report_chat_id: str = Field(default="", description="Telegram chat ID for daily report")
 
+    # -- NLP/LLM daily research report (email) --
+    research_report_enabled: bool = Field(default=True, description="Enable NLP/LLM research report pipeline")
+    research_report_hour: int = Field(default=7, description="Hour (UTC) for NLP/LLM research report")
+    research_report_minute: int = Field(default=30, description="Minute for NLP/LLM research report")
+    research_report_recipient: str = Field(
+        default="dangquochiep2908@gmail.com",
+        description="Recipient email for NLP/LLM report PDF",
+    )
+    gmail_address: str = Field(default="", description="Gmail sender address for SMTP")
+    gmail_app_password: str = Field(default="", description="Gmail app password for SMTP")
+
     # -- Logging --
     log_level: str = Field(default="INFO")
 
@@ -71,6 +86,23 @@ class Settings(BaseSettings):
     @property
     def arxiv_categories(self) -> List[str]:
         return [c.strip() for c in self.arxiv_default_categories.split(",") if c.strip()]
+
+    @property
+    def google_api_key_pool(self) -> List[str]:
+        keys: List[str] = []
+        if self.google_api_key.strip():
+            keys.append(self.google_api_key.strip())
+        if self.google_api_keys.strip():
+            keys.extend(k.strip() for k in self.google_api_keys.split(",") if k.strip())
+
+        # Remove duplicates while preserving order
+        unique: List[str] = []
+        seen = set()
+        for key in keys:
+            if key not in seen:
+                unique.append(key)
+                seen.add(key)
+        return unique
 
     @property
     def project_root(self) -> Path:
