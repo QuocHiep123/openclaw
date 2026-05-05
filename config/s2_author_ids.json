@@ -1,0 +1,361 @@
+[
+  {
+    "name_en": "Zhiyuan Liu",
+    "error": "search failed: 429 rate limit on https://api.semanticscholar.org/graph/v1/paper/search"
+  },
+  {
+    "name_en": "Maosong Sun",
+    "name_cn": "孙茂松",
+    "affiliation": "Tsinghua University",
+    "query": "Maosong Sun OpenBMB",
+    "chosen_author_id": "2273551430",
+    "candidates": [
+      {
+        "authorId": "2273551430",
+        "matched_name": "Maosong Sun",
+        "paper_hits_in_top25": 13,
+        "paperCount": 128,
+        "hIndex": 33,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "1753344",
+        "matched_name": "Maosong Sun",
+        "paper_hits_in_top25": 6,
+        "paperCount": 491,
+        "hIndex": 100,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2350529146",
+        "matched_name": "Maosong Sun",
+        "paper_hits_in_top25": 2,
+        "paperCount": 13,
+        "hIndex": 6,
+        "affiliations": [],
+        "homepage": null
+      }
+    ]
+  },
+  {
+    "name_en": "Jie Tang",
+    "name_cn": "唐杰",
+    "affiliation": "Tsinghua University",
+    "query": "Jie Tang KEG GLM",
+    "chosen_author_id": "2260595820",
+    "candidates": [
+      {
+        "authorId": "2260595820",
+        "matched_name": "Jie Tang",
+        "paper_hits_in_top25": 3,
+        "paperCount": 28,
+        "hIndex": 20,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2299520770",
+        "matched_name": "Jie Tang",
+        "paper_hits_in_top25": 3,
+        "paperCount": 6,
+        "hIndex": 3,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2295923423",
+        "matched_name": "Jie Tang",
+        "paper_hits_in_top25": 3,
+        "paperCount": 10,
+        "hIndex": 2,
+        "affiliations": [],
+        "homepage": null
+      }
+    ]
+  },
+  {
+    "name_en": "Minlie Huang",
+    "name_cn": "黄民烈",
+    "affiliation": "Tsinghua University",
+    "query": "Minlie Huang CoAI",
+    "chosen_author_id": "1730108",
+    "candidates": [
+      {
+        "authorId": "1730108",
+        "matched_name": "Minlie Huang",
+        "paper_hits_in_top25": 4,
+        "paperCount": 277,
+        "hIndex": 74,
+        "affiliations": [
+          "Tsinghua University"
+        ],
+        "homepage": "http://coai.cs.tsinghua.edu.cn/hml"
+      },
+      {
+        "authorId": "2254009342",
+        "matched_name": "Minlie Huang",
+        "paper_hits_in_top25": 10,
+        "paperCount": 57,
+        "hIndex": 19,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2285704458",
+        "matched_name": "Minlie Huang",
+        "paper_hits_in_top25": 4,
+        "paperCount": 14,
+        "hIndex": 7,
+        "affiliations": [],
+        "homepage": null
+      }
+    ]
+  },
+  {
+    "name_en": "Yang Liu",
+    "name_cn": "刘洋",
+    "affiliation": "Tsinghua University",
+    "query": "Yang Liu machine translation neural machine translation",
+    "chosen_author_id": "144090485",
+    "candidates": [
+      {
+        "authorId": "144090485",
+        "matched_name": "Yang Liu",
+        "paper_hits_in_top25": 7,
+        "paperCount": 74,
+        "hIndex": 26,
+        "affiliations": [
+          "Tsinghua University, China"
+        ],
+        "homepage": "http://nlp.csai.tsinghua.edu.cn/~ly/"
+      },
+      {
+        "authorId": "2152798100",
+        "matched_name": "Yang Liu",
+        "paper_hits_in_top25": 10,
+        "paperCount": 33,
+        "hIndex": 21,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "40457423",
+        "matched_name": "Yang Liu",
+        "paper_hits_in_top25": 4,
+        "paperCount": 636,
+        "hIndex": 73,
+        "affiliations": [],
+        "homepage": "https://scholar.google.com/citations?user=M78NJC4AAAAJ"
+      }
+    ]
+  },
+  {
+    "name_en": "Xu Han",
+    "name_cn": "韩旭",
+    "affiliation": "Tsinghua University",
+    "query": "Xu Han OpenKE",
+    "chosen_author_id": "48506411",
+    "candidates": [
+      {
+        "authorId": "48506411",
+        "matched_name": "Xu Han",
+        "paper_hits_in_top25": 4,
+        "paperCount": 101,
+        "hIndex": 45,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2044616606",
+        "matched_name": "Han Xu",
+        "paper_hits_in_top25": 2,
+        "paperCount": 48,
+        "hIndex": 27,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2278643857",
+        "matched_name": "Hanwei Xu",
+        "paper_hits_in_top25": 2,
+        "paperCount": 21,
+        "hIndex": 9,
+        "affiliations": [],
+        "homepage": null
+      }
+    ]
+  },
+  {
+    "name_en": "Bowen Zhou",
+    "error": "search failed: 429 rate limit on https://api.semanticscholar.org/graph/v1/paper/search"
+  },
+  {
+    "name_en": "Yanyan Lan",
+    "error": "search failed: 429 rate limit on https://api.semanticscholar.org/graph/v1/paper/search"
+  },
+  {
+    "name_en": "Jianfei Chen",
+    "name_cn": "陈键飞",
+    "affiliation": "Tsinghua University",
+    "query": "Jianfei Chen efficient training",
+    "chosen_author_id": "2276707",
+    "candidates": [
+      {
+        "authorId": "2276707",
+        "matched_name": "Jianfei Chen",
+        "paper_hits_in_top25": 10,
+        "paperCount": 74,
+        "hIndex": 31,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2327927796",
+        "matched_name": "Jianfei Chen",
+        "paper_hits_in_top25": 5,
+        "paperCount": 15,
+        "hIndex": 11,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2316961675",
+        "matched_name": "Jianfei Chen",
+        "paper_hits_in_top25": 1,
+        "paperCount": 9,
+        "hIndex": 3,
+        "affiliations": [],
+        "homepage": null
+      }
+    ]
+  },
+  {
+    "name_en": "Yaodong Yang",
+    "name_cn": "杨耀东",
+    "affiliation": "Peking University",
+    "query": "Yaodong Yang multi-agent MARL",
+    "chosen_author_id": "47796324",
+    "candidates": [
+      {
+        "authorId": "47796324",
+        "matched_name": "Yaodong Yang",
+        "paper_hits_in_top25": 16,
+        "paperCount": 137,
+        "hIndex": 41,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2258794784",
+        "matched_name": "Yaodong Yang",
+        "paper_hits_in_top25": 5,
+        "paperCount": 11,
+        "hIndex": 2,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2293554787",
+        "matched_name": "Yaodong Yang",
+        "paper_hits_in_top25": 2,
+        "paperCount": 6,
+        "hIndex": 3,
+        "affiliations": [],
+        "homepage": null
+      }
+    ]
+  },
+  {
+    "name_en": "Zongqing Lu",
+    "error": "search failed: 429 rate limit on https://api.semanticscholar.org/graph/v1/paper/search"
+  },
+  {
+    "name_en": "Zhifang Sui",
+    "name_cn": "穗志方",
+    "affiliation": "Peking University",
+    "query": "Zhifang Sui language understanding semantics",
+    "chosen_author_id": "3335836",
+    "candidates": [
+      {
+        "authorId": "3335836",
+        "matched_name": "Zhifang Sui",
+        "paper_hits_in_top25": 13,
+        "paperCount": 180,
+        "hIndex": 38,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2287829088",
+        "matched_name": "Zhifang Sui",
+        "paper_hits_in_top25": 9,
+        "paperCount": 50,
+        "hIndex": 10,
+        "affiliations": [],
+        "homepage": null
+      }
+    ]
+  },
+  {
+    "name_en": "Xiaojun Wan",
+    "name_cn": "万小军",
+    "affiliation": "Peking University",
+    "query": "Xiaojun Wan summarization generation",
+    "chosen_author_id": "145078589",
+    "candidates": [
+      {
+        "authorId": "145078589",
+        "matched_name": "Xiaojun Wan",
+        "paper_hits_in_top25": 11,
+        "paperCount": 231,
+        "hIndex": 51,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "117908148",
+        "matched_name": "Xiaojun Wan",
+        "paper_hits_in_top25": 5,
+        "paperCount": 43,
+        "hIndex": 14,
+        "affiliations": [],
+        "homepage": null
+      },
+      {
+        "authorId": "2262215991",
+        "matched_name": "Xiaojun Wan",
+        "paper_hits_in_top25": 3,
+        "paperCount": 28,
+        "hIndex": 8,
+        "affiliations": [],
+        "homepage": null
+      }
+    ]
+  },
+  {
+    "name_en": "Yansong Feng",
+    "error": "search failed: 429 rate limit on https://api.semanticscholar.org/graph/v1/paper/search"
+  },
+  {
+    "name_en": "Anh Tuan Luu",
+    "name_cn": null,
+    "affiliation": "Nanyang Technological University",
+    "query": "Anh Tuan Luu",
+    "chosen_author_id": "26336902",
+    "candidates": [
+      {
+        "authorId": "26336902",
+        "matched_name": "Anh Tuan Luu",
+        "paper_hits_in_top25": 14,
+        "paperCount": 108,
+        "hIndex": 36,
+        "affiliations": [
+          "MIT"
+        ],
+        "homepage": "https://people.csail.mit.edu/tuanluu/"
+      }
+    ]
+  }
+]

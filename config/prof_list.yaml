@@ -1,0 +1,176 @@
+# Prof list for prof-curated paper retrieval via arxiv API.
+#
+# Strategy: query arxiv with `au:"Name"` + cs.CL/cs.AI filter, then disambiguate
+# heuristically by co-authors + keywords (lab/affiliation/recent paper names),
+# rejecting same-name authors in unrelated fields.
+#
+# The existing LLM relevance filter (in nlp_llm_research_pipeline.py) provides
+# the second-pass safety net, so heuristic noise is acceptable.
+
+profs:
+  # === Tsinghua University ===
+  - name_en: Zhiyuan Liu
+    name_cn: 刘知远
+    affiliation: Tsinghua University
+    arxiv_au_query: 'au:"Zhiyuan Liu"'
+    disambiguation:
+      coauthors: [Maosong Sun, Xu Han, Ganqu Cui, Shengding Hu, Yuxiang Huang, Yujia Qin]
+      keywords: [Tsinghua, OpenBMB, MiniCPM, KEPLER, ToolLLM, BMTrain, OpenKE, UltraChat, UltraFeedback]
+      reject_keywords: [chemistry, biology, agricultural, medical, tumor, plant, clinical, hospital]
+    topics: [llm, plm, knowledge, agents]
+
+  - name_en: Maosong Sun
+    name_cn: 孙茂松
+    affiliation: Tsinghua University
+    arxiv_au_query: 'au:"Maosong Sun"'
+    disambiguation:
+      coauthors: [Zhiyuan Liu, Xu Han, Yang Liu]
+      keywords: [Tsinghua, OpenBMB, MiniCPM, language model]
+      reject_keywords: [medical, agricultural]
+    topics: [nlp, foundations]
+
+  - name_en: Jie Tang
+    name_cn: 唐杰
+    affiliation: Tsinghua University
+    arxiv_au_query: 'au:"Jie Tang"'
+    disambiguation:
+      coauthors: [Yuxiao Dong, Aohan Zeng, Hanyu Lai, Xiao Liu, Wenyi Zhao]
+      keywords: [Tsinghua, KEG, GLM, ChatGLM, GLM-130B, AgentBench, AgentTuning, CodeGeeX, CogVLM]
+      reject_keywords: [medical, surgery, biology, chemistry, hospital, clinical, oncology]
+    topics: [llm, glm, agents, rlhf]
+
+  - name_en: Minlie Huang
+    name_cn: 黄民烈
+    affiliation: Tsinghua University
+    arxiv_au_query: 'au:"Minlie Huang"'
+    disambiguation:
+      coauthors: [Hao Sun, Jiaxin Wen, Pei Ke, Xiaoyan Zhu]
+      keywords: [Tsinghua, CoAI, dialogue, EVA, alignment, safety, RLHF, conversation]
+      reject_keywords: [medical, surgery, biology, agricultural]
+    topics: [dialogue, alignment, safety, rlhf]
+
+  - name_en: Yang Liu
+    name_cn: 刘洋
+    affiliation: Tsinghua University
+    # "Yang Liu" is extremely common - heavy disambiguation needed
+    arxiv_au_query: 'au:"Yang Liu"'
+    disambiguation:
+      coauthors: [Maosong Sun, Huanbo Luan, Shuhao Gu, Yong Cheng, Zhiyuan Liu]
+      keywords: [Tsinghua, machine translation, neural machine translation, multilingual, low-resource translation, parallel corpus]
+      reject_keywords: [medical, surgery, finance, network security, wireless, sensor, biology, agricultural, climate]
+    topics: [machine_translation, multilingual, low_resource]
+
+  - name_en: Xu Han
+    name_cn: 韩旭
+    affiliation: Tsinghua University
+    arxiv_au_query: 'au:"Xu Han"'
+    disambiguation:
+      coauthors: [Zhiyuan Liu, Maosong Sun, Ganqu Cui]
+      keywords: [Tsinghua, OpenKE, OpenNRE, KEPLER, knowledge graph, relation extraction, language model]
+      reject_keywords: [medical, agricultural, mechanics, structural, civil engineering]
+    topics: [knowledge, agents, llm]
+
+  - name_en: Bowen Zhou
+    name_cn: 周伯文
+    affiliation: Tsinghua University (AIR)
+    arxiv_au_query: 'au:"Bowen Zhou"'
+    disambiguation:
+      coauthors: [Kaiyan Zhang, Ning Ding, Hao Peng]
+      keywords: [Tsinghua, AIR, Institute for AI Industry Research, multimodal, alignment, foundation model]
+      reject_keywords: [medical, biology, agricultural, surgery, hospital, finance]
+    topics: [llm, multimodal, alignment]
+
+  - name_en: Yanyan Lan
+    name_cn: 兰艳艳
+    affiliation: Tsinghua University (AIR)
+    arxiv_au_query: 'au:"Yanyan Lan"'
+    disambiguation:
+      coauthors: [Jun Xu, Xueqi Cheng, Liang Pang]
+      keywords: [Tsinghua, AIR, retrieval, ranking, language model, IR]
+      reject_keywords: [medical, agricultural]
+    topics: [llm, ir, retrieval]
+
+  - name_en: Jianfei Chen
+    name_cn: 陈键飞
+    affiliation: Tsinghua University
+    arxiv_au_query: 'au:"Jianfei Chen"'
+    disambiguation:
+      coauthors: [Jun Zhu, Tianyu Pang]
+      keywords: [Tsinghua, efficient training, quantization, low-precision, optimizer, large model]
+      reject_keywords: [medical, biology, surgery]
+    topics: [efficient_training, rl]
+
+  # === Peking University ===
+  - name_en: Yaodong Yang
+    name_cn: 杨耀东
+    affiliation: Peking University
+    arxiv_au_query: 'au:"Yaodong Yang"'
+    disambiguation:
+      coauthors: [Jun Wang, Ying Wen, Jiaming Ji]
+      keywords: [Peking, PKU, multi-agent, MARL, alignment, RLHF, safe RL, BeaverTails]
+      reject_keywords: [medical, finance, ecology, biology, materials]
+    topics: [marl, alignment, rlhf]
+
+  - name_en: Zongqing Lu
+    name_cn: 卢宗青
+    affiliation: Peking University
+    arxiv_au_query: 'au:"Zongqing Lu"'
+    disambiguation:
+      coauthors: [Jun Wang, Chenghao Li]
+      keywords: [Peking, PKU, multi-agent, reinforcement learning, MARL, cooperative, decentralized]
+      reject_keywords: [medical, biology, optical, materials]
+    topics: [marl, deep_rl]
+
+  - name_en: Zhifang Sui
+    name_cn: 穗志方
+    affiliation: Peking University
+    arxiv_au_query: 'au:"Zhifang Sui"'
+    disambiguation:
+      coauthors: [Baobao Chang, Lei Sha, Damai Dai]
+      keywords: [Peking, PKU, language understanding, NLP, semantics]
+      reject_keywords: [medical, agricultural]
+    topics: [nlp, semantics]
+
+  - name_en: Xiaojun Wan
+    name_cn: 万小军
+    affiliation: Peking University
+    arxiv_au_query: 'au:"Xiaojun Wan"'
+    disambiguation:
+      coauthors: [Junyi Li, Yue Cao]
+      keywords: [Peking, PKU, summarization, generation, NLP, language model]
+      reject_keywords: [medical, surgery, biology]
+    topics: [generation, summarization]
+
+  - name_en: Yansong Feng
+    name_cn: 冯岩松
+    affiliation: Peking University
+    arxiv_au_query: 'au:"Yansong Feng"'
+    disambiguation:
+      coauthors: [Dongyan Zhao, Songfang Huang]
+      keywords: [Peking, PKU, knowledge graph, question answering, reasoning]
+      reject_keywords: [medical, agricultural]
+    topics: [nlp, knowledge]
+
+  # === Singapore ===
+  - name_en: Anh Tuan Luu
+    name_cn: null
+    affiliation: Nanyang Technological University
+    arxiv_au_query: 'au:"Anh Tuan Luu" OR au:"Luu Anh Tuan"'
+    disambiguation:
+      coauthors: [Yew Soon Ong, Siu Cheung Hui]
+      keywords: [Nanyang, NTU, Singapore, multilingual, reasoning, retrieval, language model]
+      reject_keywords: []
+    topics: [reasoning, multilingual, nlp]
+
+# Topic-match fallback when prof papers thin
+fallback:
+  enabled: true
+  # Searched as: ti:KEYWORD OR abs:KEYWORD on cs.CL/cs.AI/cs.LG
+  keywords:
+    - low-resource
+    - multilingual
+    - multi-agent
+    - RLHF
+    - alignment
+    - reasoning
+  max_papers: 15

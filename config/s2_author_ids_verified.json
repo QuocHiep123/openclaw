@@ -1,0 +1,460 @@
+[
+  {
+    "name_en": "Zhiyuan Liu",
+    "verified_author_ids": [
+      "2269703458",
+      "2301534001",
+      "2366036156",
+      "2141313179",
+      "2284825514"
+    ],
+    "verifications": [
+      {
+        "note": "manual_resolutions.json — multiple S2 fragments for THU OpenBMB Zhiyuan Liu (MiniCPM/ChatDev/AgentVerse)"
+      }
+    ]
+  },
+  {
+    "name_en": "Maosong Sun",
+    "verified_author_ids": [
+      "1753344"
+    ],
+    "verifications": [
+      {
+        "authorId": "2273551430",
+        "sample_size": 15,
+        "keyword_hits": 0,
+        "arxiv_papers_in_sample": 12,
+        "matched_name": "Maosong Sun",
+        "paperCount": 128,
+        "hIndex": 33,
+        "affiliations": [],
+        "verdict": "reject"
+      },
+      {
+        "authorId": "1753344",
+        "sample_size": 15,
+        "keyword_hits": 1,
+        "arxiv_papers_in_sample": 13,
+        "matched_name": "Maosong Sun",
+        "paperCount": 491,
+        "hIndex": 100,
+        "affiliations": [],
+        "verdict": "reject"
+      },
+      {
+        "authorId": "2350529146",
+        "sample_size": 13,
+        "keyword_hits": 1,
+        "arxiv_papers_in_sample": 10,
+        "matched_name": "Maosong Sun",
+        "paperCount": 13,
+        "hIndex": 6,
+        "affiliations": [],
+        "verdict": "reject"
+      }
+    ]
+  },
+  {
+    "name_en": "Jie Tang",
+    "verified_author_ids": [
+      "2260595820",
+      "2299520770",
+      "2295923423"
+    ],
+    "verifications": [
+      {
+        "authorId": "2260595820",
+        "sample_size": 15,
+        "keyword_hits": 5,
+        "arxiv_papers_in_sample": 13,
+        "matched_name": "Jie Tang",
+        "paperCount": 28,
+        "hIndex": 20,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2299520770",
+        "sample_size": 6,
+        "keyword_hits": 3,
+        "arxiv_papers_in_sample": 3,
+        "matched_name": "Jie Tang",
+        "paperCount": 6,
+        "hIndex": 3,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2295923423",
+        "sample_size": 10,
+        "keyword_hits": 2,
+        "arxiv_papers_in_sample": 7,
+        "matched_name": "Jie Tang",
+        "paperCount": 10,
+        "hIndex": 2,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      }
+    ]
+  },
+  {
+    "name_en": "Minlie Huang",
+    "verified_author_ids": [
+      "1730108",
+      "2254009342",
+      "2285704458"
+    ],
+    "verifications": [
+      {
+        "authorId": "1730108",
+        "sample_size": 15,
+        "keyword_hits": 8,
+        "arxiv_papers_in_sample": 11,
+        "matched_name": "Minlie Huang",
+        "paperCount": 277,
+        "hIndex": 74,
+        "affiliations": [
+          "Tsinghua University"
+        ],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2254009342",
+        "sample_size": 15,
+        "keyword_hits": 12,
+        "arxiv_papers_in_sample": 14,
+        "matched_name": "Minlie Huang",
+        "paperCount": 57,
+        "hIndex": 19,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2285704458",
+        "sample_size": 14,
+        "keyword_hits": 12,
+        "arxiv_papers_in_sample": 10,
+        "matched_name": "Minlie Huang",
+        "paperCount": 14,
+        "hIndex": 7,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      }
+    ]
+  },
+  {
+    "name_en": "Yang Liu",
+    "verified_author_ids": [
+      "144090485",
+      "2152798100"
+    ],
+    "verifications": [
+      {
+        "authorId": "144090485",
+        "sample_size": 15,
+        "keyword_hits": 8,
+        "arxiv_papers_in_sample": 3,
+        "matched_name": "Yang Liu",
+        "paperCount": 74,
+        "hIndex": 26,
+        "affiliations": [
+          "Tsinghua University, China"
+        ],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2152798100",
+        "sample_size": 15,
+        "keyword_hits": 7,
+        "arxiv_papers_in_sample": 6,
+        "matched_name": "Yang Liu",
+        "paperCount": 33,
+        "hIndex": 21,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "40457423",
+        "sample_size": 15,
+        "keyword_hits": 0,
+        "arxiv_papers_in_sample": 1,
+        "matched_name": "Yang Liu",
+        "paperCount": 636,
+        "hIndex": 73,
+        "affiliations": [],
+        "verdict": "reject"
+      }
+    ]
+  },
+  {
+    "name_en": "Xu Han",
+    "verified_author_ids": [],
+    "verifications": [
+      {
+        "authorId": "48506411",
+        "sample_size": 15,
+        "keyword_hits": 0,
+        "arxiv_papers_in_sample": 14,
+        "matched_name": "Xu Han",
+        "paperCount": 101,
+        "hIndex": 45,
+        "affiliations": [],
+        "verdict": "reject",
+        "note": "kept by phase-2 fallback but 0 keyword hits — likely wrong Xu Han, use arxiv heuristic instead"
+      },
+      {
+        "authorId": "2044616606",
+        "sample_size": 15,
+        "keyword_hits": 0,
+        "arxiv_papers_in_sample": 6,
+        "matched_name": "Han Xu",
+        "paperCount": 48,
+        "hIndex": 27,
+        "affiliations": [],
+        "verdict": "reject",
+        "note": "kept by phase-2 fallback but 0 keyword hits — likely wrong Xu Han, use arxiv heuristic instead"
+      },
+      {
+        "authorId": "2278643857",
+        "sample_size": 15,
+        "keyword_hits": 0,
+        "arxiv_papers_in_sample": 10,
+        "matched_name": "Hanwei Xu",
+        "paperCount": 21,
+        "hIndex": 9,
+        "affiliations": [],
+        "verdict": "reject",
+        "note": "kept by phase-2 fallback but 0 keyword hits — likely wrong Xu Han, use arxiv heuristic instead"
+      }
+    ]
+  },
+  {
+    "name_en": "Bowen Zhou",
+    "verified_author_ids": [],
+    "verifications": []
+  },
+  {
+    "name_en": "Yanyan Lan",
+    "verified_author_ids": [
+      "37510256"
+    ],
+    "verifications": [
+      {
+        "note": "manual_resolutions.json — 20/20 hits, IR/ranking clear signal"
+      }
+    ]
+  },
+  {
+    "name_en": "Jianfei Chen",
+    "verified_author_ids": [
+      "2276707",
+      "2327927796",
+      "2316961675"
+    ],
+    "verifications": [
+      {
+        "authorId": "2276707",
+        "sample_size": 15,
+        "keyword_hits": 7,
+        "arxiv_papers_in_sample": 14,
+        "matched_name": "Jianfei Chen",
+        "paperCount": 74,
+        "hIndex": 31,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2327927796",
+        "sample_size": 15,
+        "keyword_hits": 8,
+        "arxiv_papers_in_sample": 12,
+        "matched_name": "Jianfei Chen",
+        "paperCount": 15,
+        "hIndex": 11,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2316961675",
+        "sample_size": 9,
+        "keyword_hits": 3,
+        "arxiv_papers_in_sample": 4,
+        "matched_name": "Jianfei Chen",
+        "paperCount": 9,
+        "hIndex": 3,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      }
+    ]
+  },
+  {
+    "name_en": "Yaodong Yang",
+    "verified_author_ids": [
+      "47796324",
+      "2258794784",
+      "2293554787"
+    ],
+    "verifications": [
+      {
+        "authorId": "47796324",
+        "sample_size": 15,
+        "keyword_hits": 7,
+        "arxiv_papers_in_sample": 8,
+        "matched_name": "Yaodong Yang",
+        "paperCount": 137,
+        "hIndex": 41,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2258794784",
+        "sample_size": 12,
+        "keyword_hits": 6,
+        "arxiv_papers_in_sample": 10,
+        "matched_name": "Yaodong Yang",
+        "paperCount": 11,
+        "hIndex": 2,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2293554787",
+        "sample_size": 6,
+        "keyword_hits": 6,
+        "arxiv_papers_in_sample": 0,
+        "matched_name": "Yaodong Yang",
+        "paperCount": 6,
+        "hIndex": 3,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      }
+    ]
+  },
+  {
+    "name_en": "Zongqing Lu",
+    "verified_author_ids": [
+      "2258676670"
+    ],
+    "verifications": [
+      {
+        "note": "manual_resolutions.json — 19/20 hits, MARL clear signal"
+      }
+    ]
+  },
+  {
+    "name_en": "Zhifang Sui",
+    "verified_author_ids": [
+      "3335836",
+      "2287829088"
+    ],
+    "verifications": [
+      {
+        "authorId": "3335836",
+        "sample_size": 15,
+        "keyword_hits": 2,
+        "arxiv_papers_in_sample": 14,
+        "matched_name": "Zhifang Sui",
+        "paperCount": 180,
+        "hIndex": 38,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2287829088",
+        "sample_size": 15,
+        "keyword_hits": 2,
+        "arxiv_papers_in_sample": 12,
+        "matched_name": "Zhifang Sui",
+        "paperCount": 50,
+        "hIndex": 10,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      }
+    ]
+  },
+  {
+    "name_en": "Xiaojun Wan",
+    "verified_author_ids": [
+      "145078589",
+      "117908148",
+      "2262215991"
+    ],
+    "verifications": [
+      {
+        "authorId": "145078589",
+        "sample_size": 15,
+        "keyword_hits": 8,
+        "arxiv_papers_in_sample": 4,
+        "matched_name": "Xiaojun Wan",
+        "paperCount": 231,
+        "hIndex": 51,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "117908148",
+        "sample_size": 15,
+        "keyword_hits": 10,
+        "arxiv_papers_in_sample": 10,
+        "matched_name": "Xiaojun Wan",
+        "paperCount": 43,
+        "hIndex": 14,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      },
+      {
+        "authorId": "2262215991",
+        "sample_size": 15,
+        "keyword_hits": 3,
+        "arxiv_papers_in_sample": 13,
+        "matched_name": "Xiaojun Wan",
+        "paperCount": 28,
+        "hIndex": 8,
+        "affiliations": [],
+        "verdict": "ACCEPT"
+      }
+    ]
+  },
+  {
+    "name_en": "Yansong Feng",
+    "verified_author_ids": [
+      "1717629"
+    ],
+    "verifications": [
+      {
+        "authorId": "1717629",
+        "sample_size": 20,
+        "keyword_hits": 8,
+        "arxiv_papers_in_sample": 0,
+        "matched_name": "Yansong Feng",
+        "paperCount": null,
+        "hIndex": null,
+        "affiliations": [],
+        "verdict": "ACCEPT",
+        "source": "manual_resolutions.json (cross-lingual KG alignment papers)"
+      }
+    ]
+  },
+  {
+    "name_en": "Anh Tuan Luu",
+    "verified_author_ids": [
+      "26336902"
+    ],
+    "verifications": [
+      {
+        "authorId": "26336902",
+        "sample_size": 15,
+        "keyword_hits": 3,
+        "arxiv_papers_in_sample": 12,
+        "matched_name": "Anh Tuan Luu",
+        "paperCount": 108,
+        "hIndex": 36,
+        "affiliations": [
+          "MIT"
+        ],
+        "verdict": "ACCEPT"
+      }
+    ]
+  }
+]

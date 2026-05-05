@@ -1,0 +1,142 @@
+[
+  {
+    "name_en": "Zhiyuan Liu",
+    "query": "Zhiyuan Liu OpenBMB MiniCPM",
+    "candidates": [
+      {
+        "authorId": "2269703458",
+        "name": "Zhiyuan Liu",
+        "hits_in_top20": 5,
+        "max_citations_in_sample": 725,
+        "sample_titles": [
+          "MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training",
+          "ChatDev: Communicative Agents for Software Development",
+          "Multi-Agent Collaboration via Evolving Orchestration"
+        ]
+      },
+      {
+        "authorId": "2301534001",
+        "name": "Zhiyuan Liu",
+        "hits_in_top20": 3,
+        "max_citations_in_sample": 1082,
+        "sample_titles": [
+          "MiniCPM-V: A GPT-4V Level MLLM on Your Phone",
+          "InfLLM-V2: Dense-Sparse Switchable Attention for Seamless Short-to-Long Adaptati",
+          "RAGEval: Scenario Specific RAG Evaluation Dataset Generation Framework"
+        ]
+      },
+      {
+        "authorId": "2366036156",
+        "name": "Zhiyuan Liu",
+        "hits_in_top20": 3,
+        "max_citations_in_sample": 68,
+        "sample_titles": [
+          "MiniCPM-V 4.5: Cooking Efficient MLLMs via Architecture, Data, and Training Reci",
+          "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
+          "Efficient GPT-4V level multimodal large language model for deployment on edge de"
+        ]
+      },
+      {
+        "authorId": "2141313179",
+        "name": "Zhiyuan Liu",
+        "hits_in_top20": 2,
+        "max_citations_in_sample": 969,
+        "sample_titles": [
+          "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behavi",
+          "OlympiadBench: A Challenging Benchmark for Promoting AGI with Olympiad-Level Bil"
+        ]
+      },
+      {
+        "authorId": "2284825514",
+        "name": "Zhiyuan Liu",
+        "hits_in_top20": 2,
+        "max_citations_in_sample": 85,
+        "sample_titles": [
+          "RepoAgent: An LLM-Powered Open-Source Framework for Repository-level Code Docume",
+          "DeepThinkVLA: Enhancing Reasoning Capability of Vision-Language-Action Models"
+        ]
+      }
+    ]
+  },
+  {
+    "name_en": "Xu Han",
+    "query": "Xu Han Tsinghua relation extraction language model",
+    "candidates": []
+  },
+  {
+    "name_en": "Bowen Zhou",
+    "query": "Bowen Zhou multimodal alignment foundation model",
+    "candidates": [
+      {
+        "authorId": "2205008464",
+        "name": "Bowen Zhou",
+        "hits_in_top20": 1,
+        "max_citations_in_sample": 1,
+        "sample_titles": [
+          "AMix-1: A Pathway to Test-Time Scalable Protein Foundation Model"
+        ]
+      },
+      {
+        "authorId": "2340938925",
+        "name": "Bowen Zhou",
+        "hits_in_top20": 1,
+        "max_citations_in_sample": 16,
+        "sample_titles": [
+          "BrainOmni: A Brain Foundation Model for Unified EEG and MEG Signals"
+        ]
+      },
+      {
+        "authorId": "2375376807",
+        "name": "Bowen Zhou",
+        "hits_in_top20": 1,
+        "max_citations_in_sample": 60,
+        "sample_titles": [
+          "Intern-S1: A Scientific Multimodal Foundation Model"
+        ]
+      },
+      {
+        "authorId": "2274906156",
+        "name": "Bowen Zhou",
+        "hits_in_top20": 1,
+        "max_citations_in_sample": 0,
+        "sample_titles": [
+          "Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale"
+        ]
+      }
+    ]
+  },
+  {
+    "name_en": "Yanyan Lan",
+    "query": "Yanyan Lan information retrieval CAS",
+    "candidates": [
+      {
+        "authorId": "37510256",
+        "name": "Yanyan Lan",
+        "hits_in_top20": 20,
+        "max_citations_in_sample": 357,
+        "sample_titles": [
+          "Information Retrieval Meets Large Language Models: A Strategic Report from Chine",
+          "SetRank: Learning a Permutation-Invariant Ranking Model for Information Retrieva",
+          "DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval"
+        ]
+      }
+    ]
+  },
+  {
+    "name_en": "Zongqing Lu",
+    "query": "Zongqing Lu cooperative multi-agent reinforcement",
+    "candidates": [
+      {
+        "authorId": "2258676670",
+        "name": "Zongqing Lu",
+        "hits_in_top20": 19,
+        "max_citations_in_sample": 414,
+        "sample_titles": [
+          "Fully Decentralized Cooperative Multi-Agent Reinforcement Learning: A Survey",
+          "Offline Decentralized Multi-Agent Reinforcement Learning",
+          "Revisiting Cooperative Off-Policy Multi-Agent Reinforcement Learning"
+        ]
+      }
+    ]
+  }
+]
