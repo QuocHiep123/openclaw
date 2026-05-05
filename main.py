@@ -6,6 +6,7 @@ Usage:
     python main.py cli          # Start interactive CLI
     python main.py server       # Start MCP tool server
     python main.py daily        # Run daily pipeline once
+    python main.py nlp_daily_report  # Run NLP/LLM PDF email pipeline once
 """
 from __future__ import annotations
 
@@ -58,6 +59,16 @@ def main():
 
         logger.info("Running daily pipeline…")
         asyncio.run(_run())
+
+    elif command in {"nlp_daily_report", "research_daily"}:
+        from pipelines.nlp_llm_research_pipeline import run_nlp_llm_daily_research_report
+
+        async def _run_report():
+            result = await run_nlp_llm_daily_research_report()
+            print(result)
+
+        logger.info("Running NLP/LLM daily research report pipeline…")
+        asyncio.run(_run_report())
 
     else:
         print(f"Unknown command: {command}")

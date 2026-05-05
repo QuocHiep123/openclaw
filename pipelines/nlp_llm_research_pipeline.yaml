@@ -1,0 +1,86 @@
+name: NLP_LLM_Daily_Research_Report
+description: Daily automated NLP and LLM paper digest from arXiv with PDF email delivery.
+
+schedule:
+  cron: "30 7 * * *"
+  timezone: UTC
+
+sources:
+  arxiv:
+    categories:
+      - cs.CL
+      - cs.AI
+    keywords:
+      - LLM
+      - Large Language Model
+      - transformer
+      - NLP
+      - RAG
+      - alignment
+      - reasoning
+    max_papers: 50
+
+pipeline:
+  - step: fetch_papers
+    output:
+      - title
+      - authors
+      - abstract
+      - pdf_link
+      - published_date
+
+  - step: relevance_filter
+    method: llm_relevance_ranking
+    target_topics:
+      - Natural Language Processing
+      - Large Language Models
+      - LLM agents
+      - RAG systems
+      - Alignment
+      - Reasoning
+
+  - step: summarize_paper
+    fields:
+      - Title
+      - Authors
+      - Problem
+      - Key Idea
+      - Method
+      - Main Results
+      - Limitations
+      - Future Directions
+
+  - step: research_lesson_generation
+    audience: graduate_data_science_student
+    include:
+      - Intuition
+      - Architecture
+      - Why it matters for LLM research
+      - 3 research ideas inspired by the paper
+
+  - step: report_builder
+    template:
+      title: Daily NLP & LLM Research Digest
+      sections:
+        - Date
+        - Paper i
+        - Title
+        - Authors
+        - Summary
+        - Key Idea
+        - Research Lesson
+        - Research Ideas
+
+  - step: pdf_generation
+    filename: NLP_LLM_Research_Report_YYYY_MM_DD.pdf
+
+  - step: email_sender
+    provider: gmail_smtp
+    to: dangquochiep2908@gmail.com
+    subject: Daily NLP & LLM Research Report
+    body: Attached is today's automated research digest for NLP and LLM papers.
+
+env:
+  required:
+    - GMAIL_ADDRESS
+    - GMAIL_APP_PASSWORD

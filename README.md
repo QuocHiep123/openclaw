@@ -58,6 +58,36 @@ python main.py server
 
 # Run daily pipeline once
 python main.py daily
+
+# Run NLP/LLM PDF email report once
+python main.py nlp_daily_report
+```
+
+## NLP/LLM Daily Research Report
+
+Pipeline name: **NLP_LLM_Daily_Research_Report**
+
+What it does automatically:
+- Fetch newest arXiv papers from `cs.CL`, `cs.AI` (up to 50)
+- Filter for NLP/LLM relevance with LLM scoring
+- Summarise each selected paper
+- Generate teaching-style research lessons + ideas
+- Build a structured digest
+- Generate `NLP_LLM_Research_Report_YYYY_MM_DD.pdf`
+- Send PDF to Gmail via SMTP
+
+Required `.env` values:
+```
+GMAIL_ADDRESS=your-gmail@gmail.com
+GMAIL_APP_PASSWORD=your-app-password
+RESEARCH_REPORT_RECIPIENT=dangquochiep2908@gmail.com
+RESEARCH_REPORT_HOUR=7
+RESEARCH_REPORT_MINUTE=30
+```
+
+Recommended host cron schedule (UTC):
+```bash
+30 7 * * * cd /path/to/ai-lab && /path/to/ai-lab/.venv/Scripts/python main.py nlp_daily_report >> /path/to/ai-lab/logs/nlp_daily_report.log 2>&1
 ```
 
 ## Commands
@@ -104,6 +134,7 @@ This project is now container-ready and supports runtime mode via environment va
 ```
 APP_MODE=bot      # Telegram bot worker (24/7)
 APP_MODE=server   # MCP FastAPI server
+APP_MODE=nlp_daily_report  # Run NLP/LLM report pipeline once
 ```
 
 ### Option A — Docker Compose on VPS (most stable)
