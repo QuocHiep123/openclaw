@@ -295,6 +295,61 @@ async def cmd_clear(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(msg)
 
 
+@auth_required
+async def cmd_translate(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Translate an arXiv paper to Vietnamese and send back the compiled PDF."""
+    if not context.args:
+        lang = settings.bot_language
+        msg = (
+            "Cú pháp: /translate <arxiv_id>\nVí dụ: /translate 2604.27393"
+            if lang == "vi"
+            else "Usage: /translate <arxiv_id>\nExample: /translate 2604.27393"
+        )
+        await update.message.reply_text(msg)
+        return
+
+    arxiv_id = context.args[0].strip()
+    lang = settings.bot_language
+    notice = (
+        f"📥 Đang tải LaTeX source và dịch *{arxiv_id}*… việc này có thể mất 1–3 phút."
+        if lang == "vi"
+        else f"📥 Downloading LaTeX source and translating *{arxiv_id}*… this can take 1–3 minutes."
+    )
+    await update.message.reply_text(notice, parse_mode="Markdown")
+
+    # Import lazily — translation deps (httpx for arxiv source, llm) shouldn't
+    # block bot startup if any one of them fails to import.
+    from pipelines.translate_paper import translate_arxiv_paper
+
+    result = await translate_arxiv_paper(arxiv_id)
+
+    try:
+        if not result.success:
+            err = result.error or "unknown error"
+            fail_msg = (
+                f"❌ Không dịch được *{arxiv_id}*: {err}"
+                if lang == "vi"
+                else f"❌ Could not translate *{arxiv_id}*: {err}"
+            )
+            await update.message.reply_text(fail_msg, parse_mode="Markdown")
+            return
+
+        caption = (
+            f"📄 Bản dịch tiếng Việt — arXiv {result.arxiv_id}"
+            if lang == "vi"
+            else f"📄 Vietnamese translation — arXiv {result.arxiv_id}"
+        )
+        with result.pdf_path.open("rb") as f:
+            await update.message.reply_document(
+                document=f,
+                filename=f"arxiv_{result.arxiv_id}_vi.pdf",
+                caption=caption,
+            )
+    finally:
+        if result.source is not None:
+            result.source.cleanup()
+
+
 # ---- Inline button callback handler ---------------------------------------
 
 @auth_required
@@ -470,6 +525,7 @@ def build_telegram_app() -> Application:
     app.add_handler(CommandHandler("report", cmd_report))
     app.add_handler(CommandHandler("status", cmd_status))
     app.add_handler(CommandHandler("clear", cmd_clear))
+    app.add_handler(CommandHandler("translate", cmd_translate))
 
     # Inline button callback handler
     app.add_handler(CallbackQueryHandler(handle_callback))
